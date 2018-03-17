@@ -1,0 +1,143 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
+body {
+  background-image:url("https://cdnb.artstation.com/p/assets/images/images/000/813/313/large/peter-wilkes-starwars1.jpg?1433663137");
+  font-family: 'Krona One', sans-serif;
+
+}
+header {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+div {
+  color: white;
+}
+.characterWrapper {
+  width: 110%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#gameMessage {
+  text-align: center;
+  font-size: 15px;
+}
+#choose-enemy-button {
+  visibility: hidden;
+}
+#restart-button {
+  visibility: hidden;
+}
+#turn-counter {
+  font-size: 150%;
+}
+
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
+.character {
+  width: 180px;
+  margin: 20px 20px 20px 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+.character img {
+  border: 0 none;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  color: #000;
+}
+.character-name {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: 'Itim', cursive;
+  font-size: 30px;
+  color: tan;
+}
+.character-health {
+  text-align: center;
+  color:white;
+}
+
+/*---------------------*/
+/*      Fighting       */
+/*---------------------*/
+.attack {
+  text-align: center;
+  color: white;
+}
+.action {
+  margin: 15px 0px;
+}
+#attack-button{
+	visibility: hidden;
+}
+.btn {
+	background: white;
+	color: #DBD2C6;	
+}
+.enemy {
+	width: 200px;
+	margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: black;
+  float: block;
+}
+#attacker {
+	padding: 5px;
+}
+.target-enemy {
+  background-color: black;
+  color: white;
+}
+
+/*---------------------*/
+/* Available Oponents  */
+/*---------------------*/
+#available-to-attack-section {
+  float: right;
+}
+#available-to-attack-section img {
+	height: 100px;
+}
+
+/*---------------------*/
+/*      Defender       */
+/*---------------------*/
+
+/*#defender {
+  width: 300px;
+  height: 200px;
+}*/
+#defender-name {
+  text-align: center;
+}
+#defender-image {
+  padding: 0px 16px;
+  margin: 3px 0px;
+}
+#defender-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*   Media Queries     */
+/*---------------------*/
+@media only screen and (max-device-width: 768px) {
+  .character {
+    display: block;
+  height: 150px;    
+  }
+  #gameMessage {
+  font-size: 12px;
+  }
+}
